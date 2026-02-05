@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Only in dirA:"; comm -23 <(ls dirA | sort) <(ls dirB | sort)
+echo "Only in dirB:"; comm -13 <(ls dirA | sort) <(ls dirB | sort)
+for f in $(ls dirA); do
+    if [ -f "dirB/$f" ]; then
+        cmp -s "dirA/$f" "dirB/$f" && echo "$f: Match" || echo "$f: Differ"
+    fi
+done
