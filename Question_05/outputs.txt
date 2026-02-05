@@ -1,0 +1,7 @@
+Checking for new files in source_folder...
+Transfer starting: 1 files
+
+sent 83 bytes  received 20 bytes  33225 bytes/sec
+total size is 0  speedup is 0.00
+Sync Complete. Content of backup_folder:
+hitendersingh@hitenders-MacBook-Air ~ % 
