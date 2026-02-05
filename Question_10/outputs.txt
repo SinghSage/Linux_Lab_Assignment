@@ -1,0 +1,3 @@
+Parent Process (PID: 8695) is exiting...
+Child Process (PID: 8696) starts. Parent is 8695
+Child Process (PID: 8696) is now an orphan. New Parent PID: 1
