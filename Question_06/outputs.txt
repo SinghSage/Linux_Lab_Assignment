@@ -1,0 +1,5 @@
+--- Top 5 Most Frequent Words ---
+   3 apple
+   2 banana
+   1 date
+   1 cherry
