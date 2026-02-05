@@ -1,0 +1,6 @@
+--- Log Analysis Report ---
+Total Log Entries:        4
+INFO messages: 2
+WARNING messages: 1
+ERROR messages: 2
+Errors have been extracted to error_log.txt
