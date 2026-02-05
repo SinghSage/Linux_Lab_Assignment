@@ -1,0 +1,1 @@
+I created a zombie process by having the child process exit while the parent process remains active (sleeping) without calling wait(). This causes the child's entry to remain in the process table in a 'Z' (zombie) or defunct state.
