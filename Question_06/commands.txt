@@ -1,0 +1,6 @@
+#!/bin/bash
+words=$(tr -s ' ' '\n' < input.txt | tr -d '[:punct:]')
+echo "Longest: $(echo "$words" | awk '{print length, $0}' | sort -nr | head -1 | cut -f2- -d' ')"
+echo "Shortest: $(echo "$words" | awk '{print length, $0}' | sort -n | head -1 | cut -f2- -d' ')"
+echo "Unique: $(echo "$words" | sort -u | wc -l)"
+echo "$words" | awk '{sum+=length; n++} END {print "Avg Length: " sum/n}'
