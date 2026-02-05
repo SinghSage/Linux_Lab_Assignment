@@ -1,0 +1,1 @@
+I used the fork() system call to create a new process. The return value of fork() allows the program to distinguish between the parent and child processes, where getpid() and getppid() are used to display their respective process identifiers.
