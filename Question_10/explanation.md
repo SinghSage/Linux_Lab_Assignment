@@ -1,0 +1,1 @@
+I demonstrated an orphan process by ensuring the parent process terminated before the child process. When the parent exits, the operating system automatically reassigns the child process to the root process (PID 1 or similar), which takes over as the new parent.
