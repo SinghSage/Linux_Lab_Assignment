@@ -1,0 +1,1 @@
+I used a while loop to read a CSV file line-by-line. The script uses IFS=',' to split the data and an if statement with logical OR (||) to check if any subject mark is below the passing criteria of 33.
