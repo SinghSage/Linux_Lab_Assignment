@@ -1,0 +1,1 @@
+I used the rsync command with the -av and --update flags to synchronize two directories. This ensures that only new or modified files are copied from the source to the backup, saving time and resources.
