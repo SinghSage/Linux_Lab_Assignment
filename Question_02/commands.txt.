@@ -1,0 +1,18 @@
+#!/bin/bash
+FILE=$1
+if [[ ! -r "$FILE" ]]; then
+    echo "Error: File missing or not readable."
+    exit 1
+fi
+TOTAL=$(wc -l < "$FILE")
+INFO=$(grep -c "INFO" "$FILE")
+WARN=$(grep -c "WARNING" "$FILE")
+ERR=$(grep -c "ERROR" "$FILE")
+LAST_ERR=$(grep "ERROR" "$FILE" | tail -1)
+REPORT="logsummary_$(date +%F).txt"
+
+{
+  echo "Total Entries: $TOTAL"
+  echo "INFO: $INFO, WARNING: $WARN, ERROR: $ERR"
+  echo "Recent Error: $LAST_ERR"
+} | tee "$REPORT"
