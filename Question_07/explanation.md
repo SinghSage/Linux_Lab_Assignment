@@ -1,0 +1,1 @@
+I implemented a Caesar Cipher using the tr command to perform a character rotation (ROT3). This translates each character to the one three places ahead in the alphabet, providing a basic form of text obfuscation.
