@@ -1,0 +1,8 @@
+#!/bin/bash
+for w in $(cat input.txt); do
+    low=${w,,}
+    if [[ $low =~ ^[aeiou]+$ ]]; then echo "$w" >> vowels.txt
+    elif [[ $low =~ ^[bcdfghjklmnpqrstvwxyz]+$ ]]; then echo "$w" >> consonants.txt
+    elif [[ $low =~ ^[bcdfghjklmnpqrstvwxyz][a-z]*$ ]]; then echo "$w" >> mixed.txt
+    fi
+done
