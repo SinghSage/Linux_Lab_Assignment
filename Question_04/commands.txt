@@ -1,0 +1,4 @@
+#!/bin/bash
+regex="^[a-zA-Z0-9]*@[a-zA-Z]*\.com$"
+grep -E "$regex" emails.txt | sort | uniq > valid.txt
+grep -vE "$regex" emails.txt > invalid.txt
